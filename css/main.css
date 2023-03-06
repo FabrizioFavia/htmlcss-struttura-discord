@@ -11,14 +11,61 @@ header{
     flex-direction: column;
 }
 
-.headerBar{
+.upperContainer{
+    width: 100vw;
     min-height: 50px;
     background-color: #add8e6;
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
 }
 
-.centerBar{
-    min-width: 1000px;
+.lowerContainer{
+    width: 100vw;
+    min-height: 400px;
+    background-color: #00008b;
 }
+
+.pinkBox{
+    max-width: 700px;
+    min-height: 350px;
+    background-color: #ee82ee;
+    margin: 2em auto 2em;
+}
+
+.navContainer{
+    /* perché in questo caso non accetta la max-width? */
+    min-width: 900px;
+    min-height: 30px;
+    margin: 1em auto 1em;
+    background-color: #daa520;
+    display: flex;
+    justify-content: space-between;
+    border: 1px dashed black;
+}
+
+.link{
+    width: calc(100%/5*3);
+    height: 100%;
+    border: 1px dashed black;
+    text-align: center;
+    padding-top: 0.2em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 0.2em;
+}
+
+.logo, .login{
+    width: calc(100%/5);
+    height: 100%;
+    border: 1px dashed black;
+    padding: 0.2em 0.5em 0 0.5em;
+
+
+}
+
+.login{
+    text-align: right;
+}
+
