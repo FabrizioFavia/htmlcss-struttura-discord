@@ -31,15 +31,19 @@ header{
     margin: 2em auto 2em;
 }
 
+.marginWidth{
+    border: 1px dashed black;
+    margin: 2em auto 2em;
+}
+
 .navContainer{
     /* perché in questo caso non accetta la max-width? */
-    min-width: 900px;
     min-height: 30px;
-    margin: 1em auto 1em;
+    min-width: 900px;
     background-color: #daa520;
     display: flex;
     justify-content: space-between;
-    border: 1px dashed black;
+    margin: 1em auto 1em;
 }
 
 .link{
@@ -61,11 +65,44 @@ a{
     height: 100%;
     border: 1px dashed black;
     padding: 0.2em 0.5em 0 0.5em;
-
-
 }
 
 .login{
     text-align: right;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer{
+    width: 100vw;
+    min-height: 450px;
+    border: 1px solid red;
+}
+
+.boxed{
+    max-width: 900px;
+    min-height: 400px;
+}
+
+main .mainContainer:nth-child(even){
+    background-color: #d3d3d3;
+}
+
+.customMainContainer{
+    background-color: #d3d3d3;
+    width: 100vw;
+    min-height: 500px;
+}
+
+.customBoxed{
+        max-width: 900px;
+        min-height: 450px;
+        margin: 2em auto 2em;
+    border: 1px solid red;
+    }
+
+
 
