@@ -28,11 +28,10 @@ header{
     max-width: 700px;
     min-height: 350px;
     background-color: #ee82ee;
-    margin: 2em auto 2em;
+    border: 2px dashed black;
 }
 
 .marginWidth{
-    border: 1px dashed black;
     margin: 2em auto 2em;
 }
 
@@ -79,10 +78,10 @@ main{
 .mainContainer{
     width: 100vw;
     min-height: 450px;
-    border: 1px solid red;
 }
 
 .boxed{
+    display: flex;
     max-width: 900px;
     min-height: 400px;
 }
@@ -98,11 +97,32 @@ main .mainContainer:nth-child(even){
 }
 
 .customBoxed{
-        max-width: 900px;
-        min-height: 450px;
-        margin: 2em auto 2em;
-    border: 1px solid red;
-    }
+    max-width: 900px;
+    min-height: 450px;
+    margin: 2em auto 2em;
+    border: 2px dashed black;
+    background-color: #228b22;
+}
 
+.left{
+    width: calc(100%/5*3);
+    min-height: 100%;
+    background-color: #1e90ff;
+    border: 2px dashed black;
+}
+
+.right{
+    width: calc(100%/5*2);
+    min-height: 100%;
+    background-color: #ffc0cb;
+    border: 2px dashed black;
+}
+
+.reverseBoxed{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 900px;
+    min-height: 400px;
+}
 
 
