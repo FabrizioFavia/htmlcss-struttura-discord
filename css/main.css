@@ -6,48 +6,45 @@ body{
     margin: 0;
 }
 
-header{
+.flex{
     display: flex;
+}
+
+header, main{
     flex-direction: column;
 }
 
-.upperContainer{
+.totalViewPort{
     width: 100vw;
-    min-height: 50px;
-    background-color: #add8e6;
-    display: flex;
 }
 
-.lowerContainer{
-    width: 100vw;
-    min-height: 350px;
-    background-color: #00008b;
-}
-
-.pinkBox{
-    max-width: 700px;
-    min-height: 300px;
-    background-color: #ee82ee;
-    border: 2px dashed black;
-}
-
-.marginWidth{
+.topBottomMargin{
     margin: 2em auto 2em;
 }
 
-.navContainer{
+.totalMinHeight{
+    min-height: 100%;
+}
+
+.dashedBlack{
+    border: 2px dashed black;
+}
+
+.upperContainer{
+    background-color: #add8e6;
+}
+
+.upperContent{
     /* perché in questo caso non accetta la max-width? */
     min-height: 30px;
-    min-width: 900px;
+    min-width: 1000px;
     background-color: #daa520;
-    display: flex;
     justify-content: space-between;
     margin: 1em auto 1em;
 }
 
 .link{
     width: calc(100%/5*3);
-    height: 100%;
     border: 1px dashed black;
     text-align: center;
     padding-top: 0.2em;
@@ -61,7 +58,6 @@ a{
 
 .logo, .login{
     width: calc(100%/5);
-    height: 100%;
     border: 1px dashed black;
     padding: 0.2em 0.5em 0 0.5em;
 }
@@ -70,74 +66,65 @@ a{
     text-align: right;
 }
 
+.blueContainer{
+    background-color: #00008b;
+}
+
+.pinkBox{
+    max-width: 700px;
+    min-height: 300px;
+    background-color: #ee82ee;
+}
 
 /* inizio main */
 
-main{
-    display: flex;
-    flex-direction: column;
-}
-
 .mainContainer{
-    width: 100vw;
     min-height: 450px;
 }
 
-.boxed{
-    display: flex;
+.bicolor{
     max-width: 900px;
     min-height: 400px;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.left{
+    width: calc(100%/5*3);
+    background-color: #1e90ff;
+}
+
+.right{
+    width: calc(100%/5*2);
+    background-color: #ffc0cb;
 }
 
 main .mainContainer:nth-child(even){
     background-color: #d3d3d3;
 }
 
-.customMainContainer{
+.customGreenContainer{
     background-color: #d3d3d3;
-    width: 100vw;
     min-height: 500px;
 }
 
-.customBoxed{
+.customGreenBox{
     max-width: 900px;
     min-height: 700px;
-    margin: 2em auto 2em;
-    border: 2px dashed black;
     background-color: #228b22;
 }
 
-.left{
-    width: calc(100%/5*3);
-    min-height: 100%;
-    background-color: #1e90ff;
-    border: 2px dashed black;
-}
-
-.right{
-    width: calc(100%/5*2);
-    min-height: 100%;
-    background-color: #ffc0cb;
-    border: 2px dashed black;
-}
-
-.reverseBoxed{
-    max-width: 900px;
-    min-height: 400px;
-    display: flex;
-    flex-direction: row-reverse;
-}
 
 .greyFooterBox{
-    width: 100vw;
     min-height: 500px;
     background-color: #23272a;
     padding-top: 0.5em;
     border-bottom: 2px solid white;
 }
 
-.midBoxed{
-    display: flex;
+.midBox{
     max-width: 900px;
     min-height: 450px;
     margin: 0 auto;
@@ -145,42 +132,34 @@ main .mainContainer:nth-child(even){
 
 .pinkFooterBox{
     min-width: 260px;
-    min-height: 100%;
     background-color: #f08080;
-    border: 2px dashed black;
 }
 
-.cutBox{
-    display: flex;
+.cutContainer{
     max-width: 640px;
-    min-height: 100%;
 }
 
 .partialBox{
     min-width: 160px;
-    height: 100%;
     background-color: #20b2aa;
     border: 2px dashed white;
 }
 
 .lastFooterPart{
-    max-width: 100%;
     background-color: #23272a;
-    min-height: 75px;
+    min-height: 60px;
     padding-top: 1em;
 }
 
 .buttonContainer{
-     max-width: 900px;
-     min-height: 50px;
+    max-width: 900px;
+    min-height: 50px;
     background-color: #7fffd4;
     margin: 0 auto;
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 button{
     background-color: #ffb6c1;
-    border: 2px dashed black;
 }
