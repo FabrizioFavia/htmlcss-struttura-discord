@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerBar{
+    min-height: 50px;
+    background-color: #add8e6;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.centerBar{
+    min-width: 1000px;
+}
