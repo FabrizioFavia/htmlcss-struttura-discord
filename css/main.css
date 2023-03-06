@@ -20,13 +20,13 @@ header{
 
 .lowerContainer{
     width: 100vw;
-    min-height: 400px;
+    min-height: 350px;
     background-color: #00008b;
 }
 
 .pinkBox{
     max-width: 700px;
-    min-height: 350px;
+    min-height: 300px;
     background-color: #ee82ee;
     border: 2px dashed black;
 }
@@ -70,6 +70,9 @@ a{
     text-align: right;
 }
 
+
+/* inizio main */
+
 main{
     display: flex;
     flex-direction: column;
@@ -98,7 +101,7 @@ main .mainContainer:nth-child(even){
 
 .customBoxed{
     max-width: 900px;
-    min-height: 450px;
+    min-height: 700px;
     margin: 2em auto 2em;
     border: 2px dashed black;
     background-color: #228b22;
@@ -119,10 +122,43 @@ main .mainContainer:nth-child(even){
 }
 
 .reverseBoxed{
-    display: flex;
-    flex-direction: row-reverse;
     max-width: 900px;
     min-height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
+.greyFooterBox{
+    width: 100vw;
+    min-height: 500px;
+    background-color: #23272a;
+    padding-top: 0.5em;
+    border-bottom: 2px solid white;
+}
 
+.midBoxed{
+    display: flex;
+    max-width: 900px;
+    min-height: 450px;
+    margin: 0 auto;
+}
+
+.pinkFooterBox{
+    min-width: 260px;
+    min-height: 100%;
+    background-color: #f08080;
+    border: 2px dashed black;
+}
+
+.cutBox{
+    display: flex;
+    max-width: 640px;
+    min-height: 100%;
+}
+
+.partialBox{
+    min-width: 160px;
+    height: 100%;
+    background-color: #20b2aa;
+    border: 2px dashed white;
+}
